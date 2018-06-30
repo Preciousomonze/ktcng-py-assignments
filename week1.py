@@ -20,7 +20,7 @@ inp2 = int(inp2)
 inp3 = int(inp3)
 
 #now process the input, geez i hate python, cant do // to comment :(
-while inp1 == "" or inp2 == "" or inp3 == "" isinstance(inp1,int) == False or isinstance(inp2,int) == False or isinstance(inp3,int) == False :
+while isinstance(inp1,int) == False or isinstance(inp2,int) == False or isinstance(inp3,int) == False :
    print("please some values arent int, try again\n")
    inp1 = input("Please select your first number:")
    inp2 = input("Please select your second number:")
