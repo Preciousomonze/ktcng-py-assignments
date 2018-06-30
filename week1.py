@@ -14,7 +14,7 @@ inp3 = int(inp3);
 #now process the input, geez i hate python, cant do // to comment :(
 while isinstance(inp1,int) == false or isinstance(inp2,int) == false or isinstance(inp3,int()) == false :
 	print("please some values arent int, try again\n");
-    inp1 = input("Please select your first number:");
+        inp1 = input("Please select your first number:");
 	inp2 = input("Please select your second number:");
 	inp3 = input("please selcet your third number:");
     #casting things, too bad , no binding :(
@@ -26,6 +26,10 @@ while isinstance(inp1,int) == false or isinstance(inp2,int) == false or isinstan
 #now get the average
 avg = (inp1 + inp2 + inp3) / 3
 print("your first number is "+inp1+"\n Second number is "+inp2+"\n third number is "+inp3+"\n average is : "+avg)
-#get the highest number
+#get the highest number, I've not finished oh,
+""" I'm sure there's a built in function for that, python people and their laziness, it's useful Shaa ahem rushing
+But trash if, amma do it myself ;), I'll write it anyhow jare, not so familiar with creating functions in python
+"""
+#store the inputs in an array first
 numb_array = [inp1,inp2,inp3]
 
