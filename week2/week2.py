@@ -37,9 +37,6 @@ def getHighestNumber(theList):
 #who needs functions when you can think :)
    return high_numb_holder;
    
-#Remove duplicate, note you can also use set() for this
-def removeDup(theList):
-   
 ###################main start
 #####
 print("Hello, welcome to this program that does what i say it should do, i'm legit a pythonista :)\n");
@@ -49,6 +46,12 @@ ourList = randTheList()
 print("Our random list of 10 numbers are: ",ourList)
 #the largest number in the list
 print("The largest number in the list is: ",getHighestNumber(ourList))
+#removing duplicates using set(), first check if the list has duplicate, got this from stack overflow, sweet
+notDupList = set(ourList);
+if(len(notDupList) != len(ourList)):
+  print("There's actually no duplicate in our list, so it still remains as: ",ourList)
+else:
+   print("Removing all duplicates, we have ",notDupList)
 #sorting list in ascending order
 """ how to sort
 templist = [25, 50, 100, 150, 200, 250, 300, 33]
@@ -59,4 +62,3 @@ sorted(templist, key=int, reverse=True) # descending order
 """
 sortedList = sorted(ourList, key=int)
 print("The list in ascending order is as follows : "+str(sortedList))
-#removing duplicates
