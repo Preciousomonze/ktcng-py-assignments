@@ -48,10 +48,11 @@ print("Our random list of 10 numbers are: ",ourList)
 print("The largest number in the list is: ",getHighestNumber(ourList))
 #removing duplicates using set(), first check if the list has duplicate, got this from stack overflow, sweet
 notDupList = set(ourList);
-if(len(notDupList) != len(ourList)):
-  print("There's actually no duplicate in our list, so it still remains as: ",ourList)
-else:
+if(len(notDupList) != len(ourList)):#there was a duplicate
    print("Removing all duplicates, we have ",notDupList)
+else:
+   print("There's actually no duplicate in our list, so it still remains as: ",ourList)
+
 #sorting list in ascending order
 """ how to sort
 templist = [25, 50, 100, 150, 200, 250, 300, 33]
