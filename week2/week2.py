@@ -22,7 +22,8 @@ def randTheList():
    for x in range(10):
        randNumber = random.randint(1,100)
        iList.extend([randNumber])
-   return iList
+   return iList;#no need to use ; but i just had to, not using curly braces is killing me, if freshi likes, he should come and
+   #beat me cause i said braces instead of brackets
 
 #get the largest number in the list, can also use max()
 def getHighestNumber(theList):
@@ -34,8 +35,13 @@ def getHighestNumber(theList):
 #what it simply does is it loops through the list, and keeps updating the high_numb_holder to the highest number, 
 #so if x isnt high, it doesnt bother updating :)
 #who needs functions when you can think :)
-   return high_numb_holder
-
+   return high_numb_holder;
+   
+#Remove duplicate, note you can also use set() for this
+def removeDup(theList):
+   
+###################main start
+#####
 print("Hello, welcome to this program that does what i say it should do, i'm legit a pythonista :)\n");
 acceptThenTurn();
 #do some random listing
