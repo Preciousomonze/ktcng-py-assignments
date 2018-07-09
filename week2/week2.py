@@ -25,10 +25,10 @@ def randTheList():
    return iList
 
 #get the largest number in the list, can also use max()
-def getHighestNumber(thelist):
+def getHighestNumber(theList):
    high_numb_holder = 0
    #looping
-   for x in numb_list:
+   for x in theList:
       if(x > high_numb_holder): #add to the holder
          high_numb_holder = x
 #what it simply does is it loops through the list, and keeps updating the high_numb_holder to the highest number, 
